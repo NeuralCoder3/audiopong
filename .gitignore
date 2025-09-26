@@ -1,0 +1,4 @@
+deploy.sh
+node_modules
+dist
+public

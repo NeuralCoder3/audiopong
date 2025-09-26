@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AudioPong - Player</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="row">
+      <span class="pill" id="side">You are: ...</span>
+      <span class="pill">Set Max: drag slider to your loudest</span>
+    </div>
+    <div class="row">
+      <label>Microphone: <select id="mic"></select></label>
+      <button id="start">Start</button>
+    </div>
+    <div class="meter-container">
+      <div class="meter"><div id="level" class="level"></div></div>
+      <input id="maxSlider" type="range" min="0.02" max="1.5" step="0.005" value="0.6" />
+      <div class="label-row"><span>Quiet</span><span>Loud</span></div>
+    </div>
+    <script type="module" src="/player.js"></script>
+  </body>
+  </html>
+
+

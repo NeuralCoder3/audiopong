@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AudioPong - Calibrate</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="row">
+      <span class="pill">Calibration</span>
+      <span class="pill">Drag handle to set max per side</span>
+    </div>
+    <div class="meter-container">
+      <div class="row" style="justify-content: space-between"><span class="pill">Left <span id="dot-left" class="dot"></span></span><span>Level: <span id="level-text-left">0</span></span></div>
+      <div class="meter"><div id="level-left" class="level"></div></div>
+      <input id="maxSliderLeft" type="range" min="0.02" max="1.5" step="0.005" value="0.6" />
+    </div>
+    <div class="meter-container">
+      <div class="row" style="justify-content: space-between"><span class="pill">Right <span id="dot-right" class="dot"></span></span><span>Level: <span id="level-text-right">0</span></span></div>
+      <div class="meter"><div id="level-right" class="level"></div></div>
+      <input id="maxSliderRight" type="range" min="0.02" max="1.5" step="0.005" value="0.6" />
+    </div>
+    <script type="module" src="/calibrate.js"></script>
+  </body>
+  </html>
+
+

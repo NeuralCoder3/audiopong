@@ -1,0 +1,24 @@
+{
+  "name": "audiopong",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:backend": "tsc -p tsconfig.json",
+    "build:frontend": "node scripts/build-frontend.mjs",
+    "build": "npm run build:backend && npm run build:frontend",
+    "start": "node dist/server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/ws": "^8.5.10",
+    "esbuild": "^0.23.1",
+    "typescript": "^5.6.3"
+  }
+}
+
+
