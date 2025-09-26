@@ -14,3 +14,5 @@ npm install
 npm run build
 npm start
 ```
+
+Or use the Docker: `neuralcoder/audiopong` (port 3000)
